@@ -1,0 +1,86 @@
+File count: 20 [should be 20]
+
+Directory count: 5 [should be 5]
+
+Total node count: 25 [should be 25]
+
+Trying to add a child to file1: 0 [should be 0]
+
+Trying to add duplicate file named file0 to dir1: 0 [should be 0]
+
+Trying to get child at index 10 from dir1: not found [should be not found]
+
+Trying to get child fake from file3: not found [should be not found]
+
+Trying to get child at index 2 from dir1: file0 [should be file0]
+
+Trying to get child file1 from dir1: file1 [should be file1]
+
+**ALL NODES BEFOER ALTERATION**
+Directory dir1 contains:
+        dir2 [dir]
+        dir4 [dir]
+        file0 [file]
+        file1 [file]
+        file2 [file]
+        file3 [file]
+        file4 [file]
+Directory dir2 contains:
+        dir3 [dir]
+        file5 [file]
+        file6 [file]
+        file7 [file]
+        file8 [file]
+        file9 [file]
+Directory dir3 contains:
+        dir5 [dir]
+        file10 [file]
+        file11 [file]
+        file12 [file]
+        file13 [file]
+        file14 [file]
+Directory dir5 contains:
+        Empty
+Directory dir4 contains:
+        file15 [file]
+        file16 [file]
+        file17 [file]
+        file18 [file]
+        file19 [file]
+
+Attempting to remove file0 from file1: 0 [should be 0]
+
+Attempting to remove file0 from dir1: 1 [should be 1]
+
+Attempting to remove file0 from dir1: 0 [should be 0]
+
+Attempting to remove dir3 from dir2: 1 [should be 1]
+
+Attempting to remove fake from dir5: 0 [should be 0]
+
+**ALL NODES AFTER REMOVAL**
+Directory dir1 contains:
+        dir2 [dir]
+        dir4 [dir]
+        file1 [file]
+        file2 [file]
+        file3 [file]
+        file4 [file]
+Directory dir2 contains:
+        file5 [file]
+        file6 [file]
+        file7 [file]
+        file8 [file]
+        file9 [file]
+Directory dir4 contains:
+        file15 [file]
+        file16 [file]
+        file17 [file]
+        file18 [file]
+        file19 [file]
+
+File count: 14 [should be 14]
+
+Directory count: 3 [should be 3]
+
+Total node count: 17 [should be 17]
